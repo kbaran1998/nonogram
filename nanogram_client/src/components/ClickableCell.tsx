@@ -27,12 +27,10 @@ function ClickableCell(props: ClickableCellProps) {
         }
         switch (e.nativeEvent.button) {
             case 0: //Left mouse click
-                console.log(`Left click: ${row}-${column}`);
                 setFilled(true);
                 props.addSelectedCells(`${row}-${column}`);
                 break;
             case 2: //Right mouse click
-                console.log(`Right click: ${row}-${column}`);
                 setEmpty(!empty);
                 break;
         }

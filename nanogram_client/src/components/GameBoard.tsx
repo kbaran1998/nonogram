@@ -30,7 +30,6 @@ function GameBoard(props: GameBoardProps) {
 
     function addSelectedCells(row_column_string: string) {
         selectedCellsSet.add(row_column_string);
-        console.log(Array.from(selectedCellsSet).join('", "'));
     }
 
     function generateCells(num: number, className: string) {
