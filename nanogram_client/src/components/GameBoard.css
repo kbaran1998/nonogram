@@ -1,0 +1,55 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    border: 5px solid black;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+th {
+    border: 2px solid black;
+    background: rgb(177, 176, 176);
+}
+
+.clickable-cell:hover {
+    background-color: rgba(255, 255, 0, 0.327);
+}
+
+.empty {
+    background: rgb(0, 0, 0);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 170, 0.373);
+}
+
+td:hover::after,
+th:hover::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 170, 0.373);
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
